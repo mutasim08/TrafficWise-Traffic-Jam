@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive educational project about traffic congestion, its causes, effects, and practical solutions.">
+  <title>Traffic Jam Awareness Project</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TrafficWise home"><span class="brand-icon">🚦</span> TrafficWise</a>
+    <nav aria-label="Main navigation">
+      <a href="#problem">The Problem</a>
+      <a href="#causes">Causes</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#tips">Commuter Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A community awareness project</p>
+        <h1>Less traffic.<br><span>More life.</span></h1>
+        <p class="hero-text">Traffic congestion wastes time, fuel, and clean air. Explore why traffic jams happen and how communities can help make journeys smoother.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#solutions">Explore solutions</a>
+          <a class="button secondary" href="#problem">Understand the problem</a>
+        </div>
+      </div>
+      <div class="road-art" aria-label="Illustration of cars waiting in traffic">
+        <div class="skyline"><span>▥</span><span>▤</span><span>▥</span><span>▦</span></div>
+        <div class="road">
+          <div class="lane-mark"></div>
+          <div class="car car-one"><i></i></div>
+          <div class="car car-two"><i></i></div>
+          <div class="car car-three"><i></i></div>
+          <div class="car car-four"><i></i></div>
+        </div>
+        <div class="traffic-light"><b></b><b></b><b></b></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Traffic congestion impacts">
+      <article><strong>Time</strong><span>Longer daily journeys</span></article>
+      <article><strong>Fuel</strong><span>More fuel burned while idling</span></article>
+      <article><strong>Air</strong><span>More vehicle emissions</span></article>
+      <article><strong>Stress</strong><span>Frustrating commutes</span></article>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-heading">
+        <p class="eyebrow">01 / The problem</p>
+        <h2>What is a traffic jam?</h2>
+      </div>
+      <p class="lead">A traffic jam occurs when the number of vehicles using a road exceeds the road's capacity, causing vehicles to slow down or stop. It can affect commuters, businesses, emergency services, and the environment.</p>
+    </section>
+
+    <section class="section tinted" id="causes">
+      <div class="section-heading">
+        <p class="eyebrow">02 / Common causes</p>
+        <h2>Why does congestion happen?</h2>
+      </div>
+      <div class="card-grid">
+        <article class="info-card"><span class="card-icon">🚗</span><h3>Too many vehicles</h3><p>When many people travel at the same time, roads can become overloaded.</p></article>
+        <article class="info-card"><span class="card-icon">🚧</span><h3>Road work</h3><p>Construction, repairs, and blocked lanes reduce the space available for traffic.</p></article>
+        <article class="info-card"><span class="card-icon">🚦</span><h3>Signal delays</h3><p>Poorly coordinated traffic signals can create long queues at intersections.</p></article>
+        <article class="info-card"><span class="card-icon">🅿️</span><h3>Illegal parking</h3><p>Vehicles parked in busy lanes can narrow roads and slow everyone down.</p></article>
+        <article class="info-card"><span class="card-icon">🚌</span><h3>Unplanned stopping</h3><p>Stopping in the middle of a road to pick up or drop off passengers disrupts flow.</p></article>
+        <article class="info-card"><span class="card-icon">🌧️</span><h3>Bad weather</h3><p>Heavy rain, poor visibility, or flooding can make journeys slower and less predictable.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="solutions">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Practical solutions</p>
+        <h2>Small changes can move us forward.</h2>
+      </div>
+      <div class="solution-list">
+        <div><span>01</span><p><strong>Improve public transport</strong><br>Reliable buses and trains can reduce the number of private vehicles on the road.</p></div>
+        <div><span>02</span><p><strong>Follow traffic rules</strong><br>Respect signals, lane markings, pedestrian crossings, and parking restrictions.</p></div>
+        <div><span>03</span><p><strong>Travel at different times</strong><br>Flexible work and school schedules can help reduce peak-hour pressure.</p></div>
+        <div><span>04</span><p><strong>Walk, cycle, or share rides</strong><br>Choose a suitable lower-impact travel option whenever possible.</p></div>
+      </div>
+    </section>
+
+    <section class="section tips-section" id="tips">
+      <div class="section-heading">
+        <p class="eyebrow">04 / Be part of the solution</p>
+        <h2>Quick commuter checklist</h2>
+        <p class="muted">Tick the habits you already follow. Your progress updates automatically.</p>
+      </div>
+      <div class="checklist" id="checklist">
+        <label><input type="checkbox"> I follow traffic signals and road signs.</label>
+        <label><input type="checkbox"> I avoid stopping or parking in busy lanes.</label>
+        <label><input type="checkbox"> I consider public transport or carpooling.</label>
+        <label><input type="checkbox"> I plan my journey before leaving.</label>
+        <label><input type="checkbox"> I give pedestrians and emergency vehicles space.</label>
+      </div>
+      <p class="progress-label"><span id="progress-text">0 of 5 habits selected</span><span id="progress-percent">0%</span></p>
+      <div class="progress-track"><div id="progress-bar"></div></div>
+    </section>
+
+    <section class="callout">
+      <p class="eyebrow">The road belongs to everyone</p>
+      <h2>Be patient. Be responsible. Keep traffic moving.</h2>
+      <p>Better traffic is a shared responsibility between citizens, communities, and city planners.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>TrafficWise · Traffic Jam Awareness Project</span>
+    <span>Educational demonstration · Not a live traffic monitoring service</span>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
